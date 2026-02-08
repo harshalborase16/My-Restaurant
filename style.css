@@ -1,4 +1,4 @@
-/* Modern CSS for Restaurant Website */
+oo/* Modern CSS for Restaurant Website */
 
 /* Reset and Base Styles */
 * {
@@ -32,13 +32,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 8%;
+    padding: 1rem 8%;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
+    border-radius: 20px;
 }
 
 .logo {
@@ -112,6 +113,8 @@ nav ul li a:hover::after {
     color: white;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .hero::before {
@@ -189,9 +192,9 @@ nav ul li a:hover::after {
 
 /* Sections */
 section {
-    padding: 5rem 8%;
+    padding: 4rem 8%;
     background: white;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -200,7 +203,8 @@ h2 {
     font-size: 2.5rem;
     color: #333;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
     position: relative;
 }
 
@@ -222,6 +226,8 @@ h2::after {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
+    
+    
 }
 
 .section-header h2 {
@@ -255,6 +261,7 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .recipe-card {
@@ -305,6 +312,42 @@ h2::after {
     background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
 
+
+
+.search-bar {
+    background: white;
+    display: inline-flex;
+    padding: 0.5rem;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input {
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    flex-grow: 1;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+    transform: scale(1.05);
+}
+
 .category-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -331,7 +374,7 @@ h2::after {
 .circle-img {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 15px;
     overflow: hidden;
     border: 4px solid transparent;
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4) border-box;
@@ -346,7 +389,7 @@ h2::after {
     left: -4px;
     right: -4px;
     bottom: -4px;
-    border-radius: 50%;
+    border-radius: 15px;
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
     z-index: -1;
 }
@@ -370,6 +413,17 @@ h2::after {
     font-weight: 600;
     color: #333;
     font-size: 1.1rem;
+}
+
+.buy-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 0px;
+    font-weight: 600;
 }
 
 /* Blog Section */
@@ -417,6 +471,7 @@ h2::after {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
 }
 
 .sidebar-item {
@@ -486,7 +541,7 @@ h2::after {
     width: 100%;
     max-width: 500px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    margin-bottom: 22nononopx;
+    margin-bottom: 22px;
 }
 
 .subscribe-box input {
@@ -516,7 +571,7 @@ h2::after {
 /* Featured Recipes */
 .featured-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -536,15 +591,15 @@ h2::after {
 .img-wrapper {
     position: relative;
     background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .img-wrapper img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

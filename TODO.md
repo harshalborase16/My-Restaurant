@@ -1,3 +1,5 @@
-# TODO List for Login Choice Reordering
+# TODO List for Shop Search Functionality
 
-- [ ] Edit login-choice.html to reorder login buttons: User Login first, Admin Login second, Cancel third
+- [x] Add script link to shop.html
+- [x] Implement search logic in script.js
+- [x] Test search functionality
