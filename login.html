@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Food Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Welcome To Shop</h2>
+            <p>Please sign in to your account</p>
+            <form id="loginForm" action="#" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Sign In</button>
+                <a href="index.html" class="btn-cancel">Cancel</a>
+            </form>
+           <p class="loginsp"> i Don`t Have Acount                   <a href="signup.html"> Sign up </a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // For user login, just redirect to index.html (no specific check)
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
