@@ -957,9 +957,9 @@ section {
 
 .btn-cancel {
     display: block;
-    background: #f8f9fa;
+    background: #e5eff8;
     color: #6c757d;
-    padding: 0.60rem 2rem;
+    padding: 0.60rem 0rem;
     border-radius: 50px;
     text-decoration: none;
     font-size: 1rem;
